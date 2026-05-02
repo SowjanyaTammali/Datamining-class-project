@@ -1,9 +1,0 @@
-fire_variable,lag_months,pearson_r,pearson_p,spearman_r,significant,n_obs
-avg_frp,0,0.0722,0.000168,0.0538,YES,2712
-avg_frp,1,0.0864,8e-06,0.0809,YES,2666
-avg_frp,2,0.0904,4e-06,0.0897,YES,2620
-avg_frp,3,0.072,0.000259,0.0511,YES,2574
-fire_count,0,0.3904,0.0,0.3163,YES,2712
-fire_count,1,0.1889,0.0,0.3043,YES,2666
-fire_count,2,0.0911,3e-06,0.2961,YES,2620
-fire_count,3,0.0384,0.051557,0.2518,NO,2574
