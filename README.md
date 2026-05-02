@@ -416,6 +416,30 @@ XGBoost gave the best full-test-set balance between accuracy and high wildfire a
 
 ---
 
+### 4. Custom XGBoost with Threshold Tuning
+
+**Script:**
+
+```text
+scripts/wildfire_model_xgb_custom.py
+```
+
+**Result:**
+
+```text
+Best threshold: 0.35
+Accuracy: 0.71
+Class 1 Precision: 0.51
+Class 1 Recall: 0.70
+Class 1 F1-score: 0.59
+```
+
+**Interpretation:**
+
+This custom XGBoost model uses threshold tuning to optimize for the best F1-score on the positive class. It achieves higher recall (0.70) than the standard XGBoost (0.57) at the cost of lower precision (0.51 vs 0.59), resulting in similar F1-score. The tuned threshold of 0.35 prioritizes detecting more high wildfire months.
+
+---
+
 ### 4. LSTM
 
 **Scripts:**
@@ -557,6 +581,7 @@ This KumoRFM result is preliminary. It should not be interpreted as full test-se
 | Random Forest | Full test set | 0.78 | 0.40 | 0.52 |
 | Balanced Random Forest | Full test set | 0.78 | 0.38 | 0.50 |
 | XGBoost | Full test set | 0.76 | 0.57 | 0.58 |
+| Custom XGBoost | Full test set | 0.71 | 0.70 | 0.59 |
 | LSTM | Full test set | 0.65 | 0.64 | 0.46 |
 | KumoRFM | 100-row subset | 1.00 | 1.00 | 1.00 |
 
@@ -564,10 +589,11 @@ This KumoRFM result is preliminary. It should not be interpreted as full test-se
 
 ## Main Findings
 
-1. XGBoost is the strongest fully evaluated model so far.
-2. Random Forest gives good accuracy but misses many high wildfire months.
-3. LSTM improves recall for high wildfire months but gives more false alarms.
-4. KumoRFM shows promising relational prediction behavior, but full evaluation requires complete batch export or SDK backend access.
+1. The custom XGBoost with threshold tuning achieves the highest recall (0.70) for detecting high wildfire months among fully evaluated models.
+2. XGBoost is the strongest fully evaluated model so far in terms of F1-score balance.
+3. Random Forest gives good accuracy but misses many high wildfire months.
+4. LSTM improves recall for high wildfire months but gives more false alarms.
+5. KumoRFM shows promising relational prediction behavior, but full evaluation requires complete batch export or SDK backend access.
 
 ---
 
