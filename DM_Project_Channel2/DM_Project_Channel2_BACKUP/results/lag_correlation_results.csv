@@ -1,0 +1,7 @@
+fire_feature,pearson_r,pearson_p,spearman_r,spearman_p,significant
+fire_count,0.3904,0.0,0.3163,0.0,True
+fire_rolling_3,0.3195,0.0,0.3648,0.0,True
+fire_last_1,0.1895,0.0,0.3061,0.0,True
+fire_last_2,0.0924,0.0,0.3017,0.0,True
+frp_last_1,0.0872,0.0,0.0795,0.0,True
+avg_frp,0.0722,0.0002,0.0538,0.0051,True
