@@ -1,0 +1,6 @@
+fire_feature,raw_pearson_r,raw_p,partial_r_adj_season,partial_p,significant
+fire_count,0.3904,0.0,0.3722,0.0,YES
+avg_frp,0.0722,0.000168,0.0417,0.029706,YES
+fire_last_1,0.1895,0.0,0.1411,0.0,YES
+frp_last_1,0.0872,5e-06,0.0231,0.230001,NO
+fire_rolling_3,0.3195,0.0,0.2667,0.0,YES
