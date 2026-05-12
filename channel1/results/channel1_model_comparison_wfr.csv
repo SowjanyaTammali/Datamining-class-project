@@ -1,0 +1,6 @@
+Model,Accuracy,Class 1 Recall,Class 1 F1
+Random Forest,0.78,0.4,0.52
+Balanced RF,0.78,0.38,0.5
+XGBoost,0.76,0.57,0.58
+LSTM,0.65,0.64,0.46
+WFR-XGB,0.7002,0.7287,0.5887
