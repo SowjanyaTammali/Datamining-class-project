@@ -1,11 +1,9 @@
 # Channel II — PM2.5 Air Quality Prediction
 
 Part of: **Predictive Modeling of Wildfire Activity and PM2.5 Air Quality Trends**  
-Sadia Islam · Sowjanya Tammali · Missouri S&T · Spring 2026
 
 ---
 
-## What This Channel Does
 
 Predicts next-month county-level PM2.5 air quality in California (2015–2020) using EPA AQS data.  
 Introduces **WWTR** — a custom XGBoost model with asymmetric loss that penalises PM2.5 underestimation more than overestimation, reducing missed pollution spike warnings.  
