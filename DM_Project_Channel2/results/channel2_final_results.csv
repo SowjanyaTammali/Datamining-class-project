@@ -1,0 +1,4 @@
+Model,MAE,RMSE,R2,Spike_Precision,Spike_Recall,Spike_F1,Missed_Warnings,Under_Bias_Spikes,Quantile_Loss_90,Directional_Acc
+Random Forest,4.412,9.962,0.07,0.553,0.534,0.543,123,8.031,2.525,0.48
+Baseline XGBoost,4.231,9.864,0.088,0.57,0.417,0.481,154,9.851,2.514,0.511
+WWTR (custom),4.439,9.984,0.066,0.546,0.587,0.566,109,7.928,2.403,0.512
