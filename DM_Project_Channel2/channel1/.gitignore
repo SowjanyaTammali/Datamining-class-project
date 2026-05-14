@@ -1,8 +1,0 @@
-kumoenv/
-path/
-*.npy
-data/raw/
-external/
-__pycache__/
-.DS_Store
-.env
